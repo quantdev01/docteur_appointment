@@ -60,7 +60,10 @@ class _UserMainState extends State<UserMain> {
         body: StreamBuilder(
           stream: FirebaseFirestore.instance
               .collection('users')
-              .where('isDoctor', isEqualTo: true)
+              .where(
+                'isDoctor',
+                isEqualTo: true,
+              )
               .snapshots(),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {

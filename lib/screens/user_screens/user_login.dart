@@ -79,7 +79,10 @@ class _UserLoginState extends State<UserLogin> {
             const Padding(
               padding: EdgeInsets.all(20),
               child: TextField(
-                decoration: InputDecoration(hintText: 'Email'),
+                decoration: InputDecoration(
+                  hintText: 'Email',
+                  border: OutlineInputBorder(),
+                ),
                 keyboardType: TextInputType.emailAddress,
                 autocorrect: false,
               ),
@@ -87,7 +90,10 @@ class _UserLoginState extends State<UserLogin> {
             const Padding(
               padding: EdgeInsets.all(20),
               child: TextField(
-                decoration: InputDecoration(hintText: 'Mot de passe'),
+                decoration: InputDecoration(
+                  hintText: 'Mot de passe',
+                  border: OutlineInputBorder(),
+                ),
                 autocorrect: false,
                 obscureText: true,
               ),

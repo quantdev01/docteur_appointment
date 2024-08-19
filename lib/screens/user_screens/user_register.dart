@@ -102,7 +102,10 @@ class _UserRegisterState extends State<UserRegister> {
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
-                    decoration: const InputDecoration(hintText: 'Name'),
+                    decoration: const InputDecoration(
+                      hintText: 'Name',
+                      border: OutlineInputBorder(),
+                    ),
                     keyboardType: TextInputType.name,
                     autocorrect: false,
                     controller: _controllerName,
@@ -111,7 +114,10 @@ class _UserRegisterState extends State<UserRegister> {
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
-                    decoration: const InputDecoration(hintText: 'Email'),
+                    decoration: const InputDecoration(
+                      hintText: 'Email',
+                      border: OutlineInputBorder(),
+                    ),
                     keyboardType: TextInputType.emailAddress,
                     autocorrect: false,
                     controller: _controllerEmail,
@@ -120,7 +126,10 @@ class _UserRegisterState extends State<UserRegister> {
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
-                    decoration: const InputDecoration(hintText: 'Password'),
+                    decoration: const InputDecoration(
+                      hintText: 'Password',
+                      border: OutlineInputBorder(),
+                    ),
                     autocorrect: false,
                     obscureText: true,
                     controller: _controllerPassword,
@@ -159,8 +168,10 @@ class _UserRegisterState extends State<UserRegister> {
                     ? Padding(
                         padding: const EdgeInsets.all(20),
                         child: TextField(
-                          decoration:
-                              const InputDecoration(hintText: 'Speciality'),
+                          decoration: const InputDecoration(
+                            hintText: 'Speciality',
+                            border: OutlineInputBorder(),
+                          ),
                           autocorrect: true,
                           controller: _controllerSpeciality,
                         ),
